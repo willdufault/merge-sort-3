@@ -43,7 +43,8 @@ def merge(numbers: List[int], l: int, m_l: int, m_r: int, r: int) -> None:
   # For every element to be sorted.
   for i in range(r - l):
     # Get the minimum values from the left, middle, and right subarrays.
-    # If there are no more elements in a subarray, set the minimum value to infinity so it is never chosen.
+    # If there are no more elements in a subarray, set the minimum value to infinity so it is never 
+    # chosen.
     minimum_left = left[0] if len(left) > 0 else math.inf
     minimum_middle = middle[0] if len(middle) > 0 else math.inf
     minimum_right = right[0] if len(right) > 0 else math.inf
